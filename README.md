@@ -20,5 +20,5 @@ Please complete the following machine setup in advance if possible:
  * In the command line app, navigate into the newly cloned folder.
  * In the command line app, install the dependencies by entering `cd react-workshop` and then run `npm install`.
  * In the command line app, run the starter kit by entering `npm start`. This will start the development webserver.
- * In your browser, enter [http://localhost:5000](http://localhost:5000) in the address bar. If you see the welcome page, you're all set!
+ * In your browser, enter [http://localhost:5000](http://localhost:5000) in the address bar. If you see the text "Welcome to react-workshop!", you're all set!
  * Get ready to learn!
