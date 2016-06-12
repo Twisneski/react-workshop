@@ -1,11 +1,10 @@
-# React and Redux - A Beginner's Introduction
+# React and Redux - A Beginner's Introduction  
 
-For those who are able to bring a laptop, here are instructions on setting up your computer in advance. These cover installing some software and a text editor, downloading the code repository, and how to confirm the code environment is running as expected. This will help free up internet bandwidth and time for instruction. 
-
-If you don't have time to do this in advance or the instructions don't make sense, no worries! Find one of the organizers (Lisa French, Eliza Brock Marcum, Beck Cronin Dixon, or William Golden) when you get to the meeting and we can get you set up during the socializing time at the beginning of the meeting.
-
-Please complete the following machine setup in advance if possible:  
-
+For those who are able to bring a laptop, here are instructions on setting up your computer in advance. These cover installing some software and a text editor, downloading the code repository, and how to confirm the code environment is running as expected. This will help free up internet bandwidth and time for instruction.  
+<br />
+If you don't have time to do this in advance or the instructions don't make sense, no worries! Find one of the organizers (Lisa French, Eliza Brock Marcum, Beck Cronin Dixon, or William Golden) when you get to the meeting and we can get you set up during the socializing time at the beginning of the meeting.  
+<br />
+Please complete the following machine setup in advance if possible:
  1. Download a code text editor that supports JSX and [install the appropriate plugin](https://github.com/facebook/react/wiki/Complementary-Tools#jsx-integrations). 
   * I recommend [Atom](https://atom.io), [SublimeText](http://www.sublimetext.com), or [Webstorm](https://www.jetbrains.com/webstorm/). Atom is free. SublimeText and Webstorm  offer free trials. All three run on Windows and Mac.
  2. Open the command line app
