@@ -8,8 +8,8 @@ Please complete the following machine setup in advance if possible:
  * Download a code text editor that supports JSX and [install the appropriate plugin](https://github.com/facebook/react/wiki/Complementary-Tools#jsx-integrations). 
   * I recommend [Atom](https://atom.io), [SublimeText](http://www.sublimetext.com), or [Webstorm](https://www.jetbrains.com/webstorm/). Atom is free. SublimeText and Webstorm  offer free trials. All three run on Windows and Mac.
  * Open the command line app
-  * Instrcutions for Mac "Terminal" command line app: http://www.wikihow.com/Get-to-the-Command-Line-on-a-Mac
-  * Instrcutions for Windows "Command Prompt" command line app: http://windows.microsoft.com/en-us/windows-vista/open-a-command-prompt-window
+  * Instructions for Mac "Terminal" command line app: http://www.wikihow.com/Get-to-the-Command-Line-on-a-Mac
+  * Instructions for Windows "Command Prompt" command line app: http://windows.microsoft.com/en-us/windows-vista/open-a-command-prompt-window
  * Install the latest version of [Node](https://nodejs.org)
   * Currently, that's v6.2.1
   * If you need to have multiple versions of Node installed, I recommend Node Version Manager - [nvm](https://github.com/creationix/nvm)
