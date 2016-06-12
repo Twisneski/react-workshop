@@ -1,0 +1,13 @@
+# React and Redux - A Beginner's Introduction
+
+Please complete the following machine setup **in advance**:  
+ 1. **Install the latest version of [Node](https://nodejs.org)** - Currently, that's v6.2.1
+    If you need to have multiple versions of Node installed, I recommend Node Version Manager - [nvm](https://github.com/creationix/nvm)
+ 2. **Install [Git](https://git-scm.com/downloads)**.  
+ 3. **Download an editor that supports JSX and [install the appropriate plugin](https://github.com/facebook/react/wiki/Complementary-Tools#jsx-integrations)**. I recommend [Atom](https://atom.io), [SublimeText](http://www.sublimetext.com), or [Webstorm](https://www.jetbrains.com/webstorm/). Atom is free. SublimeText and Webstorm  offer free trials. All three run on Windows and Mac.  
+ 4. **Clone this repository**. Open the command line and run this in the directory where you plan to work:
+```git clone https://github.com/egdelwonk/react-workshop.git```  
+ 5. **Install the dependencies**. `cd react-workshop` and then run this: `npm install`
+ 6. **Run the starter kit**. Run this: `npm start`. This will start the development webserver.
+ 7. **Open [http://localhost:5000](http://localhost:5000).** If you see the welcome page, you're all set!
+ 8. Get ready to learn!
