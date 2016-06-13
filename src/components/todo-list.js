@@ -16,7 +16,13 @@ const TodoList = (props) => {
     <div className="todo-list">
       {
         todos.map((todo) => {
-          return <TodoItem key={todo.id} label={todo.label} />
+          return <TodoItem key={todo.id}
+                           id={todo.id}
+                           label={todo.label}
+                           completed={todo.completed}
+                           onItemToggle={props.onItemToggle}
+                           onItemEdit={props.onItemEdit}
+                           onItemDelete={props.onItemDelete} />
         })
       }
     </div>

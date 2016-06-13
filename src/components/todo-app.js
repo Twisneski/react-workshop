@@ -24,6 +24,7 @@ class TodoApp extends React.Component {
   constructor(props) {
     super(props);
 
+    // our default starting state.
     this.state = {
       todos: [
         {id: 1, label: 'Learn React', completed: false},
@@ -36,6 +37,10 @@ class TodoApp extends React.Component {
     // This binds the context (`this` keyword) to this instance of TodoApp,
     // So that when TodoFilter uses our callback, we will reference the correct component.
     this.onFilterClick = this.onFilterClick.bind(this);
+    this.onAdd = this.onAdd.bind(this);
+    this.onItemEdit = this.onItemEdit.bind(this);
+    this.onItemDelete = this.onItemDelete.bind(this);
+    this.onItemToggle = this.onItemToggle.bind(this);
   }
 
   render () {
@@ -43,12 +48,62 @@ class TodoApp extends React.Component {
 
     return (
       <div className="todo-app">
-        <AddTodo placeholder="What do you want to be done?" />
-        <TodoList todos={todos} filter={filter}/>
+        <AddTodo onAdd={this.onAdd} placeholder="What do you want to be done?" />
+        <TodoList todos={todos}
+                  filter={filter}
+                  onItemToggle={this.onItemToggle}
+                  onItemEdit={this.onItemEdit}
+                  onItemDelete={this.onItemDelete} />
         <TodoCounter todos={todos} />
         <TodoFilter onFilterClick={this.onFilterClick}/>
       </div>
     );
+  }
+
+  onAdd(todo) {
+    let todos = this.state.todos;
+
+    // increment our id before we save
+    todo.id = todos.length + 1;
+
+    // take our current todos, and push our new todo onto the list
+    this.setState({
+      todos: [
+        todo,
+        ...todos
+      ]
+    });
+  }
+
+  onItemEdit(itemId, text) {
+    let todos = this.state.todos.map(function (todo) {
+			return todo.id !== itemId ? todo : Object.assign({}, todo, {label: text});
+		});
+
+    this.setState({
+      todos: todos
+    });
+  }
+
+  onItemDelete(itemId) {
+    let todos = this.state.todos.filter(function (todo) {
+			return todo.id !== itemId;
+		});
+
+    this.setState({
+      todos: todos
+    });
+  }
+
+  onItemToggle(itemId) {
+    let todos = this.state.todos.map(function (todo) {
+			return todo.id !== itemId ?
+				todo : Object.assign({}, todo, {completed: !todo.completed});
+		});
+
+    this.setState({
+      todos: todos
+    });
   }
 
   onFilterClick(filter) {
