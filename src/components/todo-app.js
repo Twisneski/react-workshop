@@ -1,5 +1,6 @@
 import React from 'react';
 import AddTodo from './add-todo';
+import TodoItem from './todo-item';
 /*
 There are a few ways you can write a component.
 Especially if that component does not have any state and only accepts props.
@@ -15,6 +16,8 @@ const TodoApp = (props) => {
   return (
     <div className="todo-app">
       <AddTodo placeholder="What do you want to be done?" />
+      <TodoItem label="Learn React" />
+      <TodoItem label="Learn Redux" />
     </div>
   )
 };
