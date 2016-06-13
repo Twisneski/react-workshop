@@ -10,13 +10,17 @@ Especially if that component does not have any state and only accepts props.
 4. ES5 Psuedo Class Syntax
 */
 
+const TODOS = [
+  {id: 1, label: 'Learn React', completed: false},
+  {id: 2, label: 'Learn Redux', completed: false}
+];
 
 //We'll use the  Stateless Component using Arrow Functions Method for now.
 const TodoApp = (props) => {
   return (
     <div className="todo-app">
       <AddTodo placeholder="What do you want to be done?" />
-      <TodoList />
+      <TodoList todos={TODOS}/>
     </div>
   )
 };

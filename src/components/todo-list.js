@@ -4,8 +4,11 @@ import TodoItem from './todo-item';
 const TodoList = (props) => {
   return (
     <div className="todo-list">
-      <TodoItem label="Learn React" />
-      <TodoItem label="Learn Redux" />
+      {
+        props.todos.map((todo) => {
+          return <TodoItem key={todo.id} label={todo.label} />
+        })
+      }
     </div>
   )
 }
