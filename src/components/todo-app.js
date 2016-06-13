@@ -1,6 +1,7 @@
 import React from 'react';
 import AddTodo from './add-todo';
 import TodoList from './todo-list';
+import TodoCounter from './todo-counter';
 /*
 There are a few ways you can write a component.
 Especially if that component does not have any state and only accepts props.
@@ -20,7 +21,8 @@ const TodoApp = (props) => {
   return (
     <div className="todo-app">
       <AddTodo placeholder="What do you want to be done?" />
-      <TodoList todos={TODOS}/>
+      <TodoList todos={TODOS} />
+      <TodoCounter todos={TODOS} />
     </div>
   )
 };
