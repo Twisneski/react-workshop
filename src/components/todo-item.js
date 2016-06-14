@@ -21,9 +21,9 @@ class TodoItem extends React.Component {
         label = <input type="text" defaultValue={props.label} onBlur={(e) => {
           let text = e.target.value;
           if (!text) {
-            e.targer.value = props.label;
+            text = props.label;
           }
-          props.onItemEdit(props.id, text); 
+          props.onItemEdit(props.id, text);
           this.setState({editing: false});
         }}/>
     }
