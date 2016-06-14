@@ -68,6 +68,6 @@ See file Notes.md in this repo
 - Documentation - React Native: https://github.com/facebook/react-native
 
 ### Git
-#### Article - A Beginner’s Git and GitHub Tutorial: http://blog.udacity.com/2015/06/a-beginners-git-github-tutorial.html
-#### Article - Inspecting Changes with Git Diff Command: https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/diffs
-#### Tutorial - How to Use Git and GitHub: https://www.udacity.com/course/how-to-use-git-and-github--ud775
+- Article - A Beginner’s Git and GitHub Tutorial: http://blog.udacity.com/2015/06/a-beginners-git-github-tutorial.html
+- Article - Inspecting Changes with Git Diff Command: https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/diffs
+- Tutorial - How to Use Git and GitHub: https://www.udacity.com/course/how-to-use-git-and-github--ud775
